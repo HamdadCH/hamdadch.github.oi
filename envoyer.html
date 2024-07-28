@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud cherif</title>
+    <script>
+        function clearForm(){
+            document.getElementById('form-cloud').reset();
+        }
+
+        window.onload = clearForm;
+    </script>
+</head>
+<body>
+    <form id="form-cloud" action="cloud.php" method="post">
+        <label for="titel">Titel:</label>
+        <input type="text" id="titel" name="titel" required>
+        <br>
+
+        <label for="text">Text:</label>
+        <textarea name="text" id="text"></textarea>
+        <br>
+
+        <button type="submit">Envoyer</button>
+    </form>
+    <p><a href="afficher.php">Afficher</a></p>
+</body>
+</html>
